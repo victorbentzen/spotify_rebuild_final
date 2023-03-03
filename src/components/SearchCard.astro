@@ -1,0 +1,53 @@
+---
+import "../styles/style.css";
+const { header, color, img } = Astro.props;
+---
+
+<a href="#">
+  <article class={color}>
+    <h2>{header}</h2>
+    <img src={img} alt="" />
+  </article>
+</a>
+
+<style>
+  article {
+    width: 13rem;
+    aspect-ratio: 1/1;
+    padding: 1rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    color: white;
+  }
+
+  img {
+    width: 50%;
+    position: absolute;
+    rotate: 32deg;
+    bottom: -8%;
+    right: -8%;
+  }
+
+  .teal {
+    background-color: rgb(39, 133, 106);
+  }
+  .blue {
+    background-color: rgb(30, 50, 100);
+  }
+  .purple {
+    background-color: rgb(141, 103, 171);
+  }
+  .magenta {
+    background-color: rgb(232, 17, 91);
+  }
+  .gray {
+    background-color: rgb(119, 119, 119);
+  }
+  .yellow {
+    background-color: rgb(215, 242, 125);
+  }
+  .red {
+    background-color: rgb(235, 30, 50);
+  }
+</style>

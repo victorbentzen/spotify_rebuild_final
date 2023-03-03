@@ -1,0 +1,27 @@
+---
+import MainLayout from "../layout/MainLayout.astro";
+import SearchCard from "../components/SearchCard.astro";
+// import InStock from "../components/InStock.astro";
+---
+
+<!-- <InStock prodName="Astro" itIsNOTInstock={false} /> -->
+<MainLayout hasSearchField={true}>
+  <div class="header">
+    <h2>Udforsk alle</h2>
+  </div>
+  <section class="card-container">
+    <SearchCard color="teal" header="Podcasts" img="https://api.lorem.space/image/album?w=350&h=350&hash=8B7BCDC2" />
+    <SearchCard color="blue" header="Specielt til dig" img="https://api.lorem.space/image/album?w=350&h=350&hash=8B7BCDC2" />
+    <SearchCard color="purple" header="Hitlister" img="https://api.lorem.space/image/album?w=350&h=350&hash=8B7BCDC2" />
+    <SearchCard color="magenta" header="Nye udgivelser" img="https://api.lorem.space/image/album?w=350&h=350&hash=8B7BCDC2" />
+    <SearchCard color="purple" header="Livebegivenheder" img="https://api.lorem.space/image/album?w=350&h=350&hash=8B7BCDC2" />
+    <SearchCard color="blue" header="Equal" img="https://api.lorem.space/image/album?w=350&h=350&hash=8B7BCDC2" />
+    <SearchCard color="gray" header="Pop" img="https://api.lorem.space/image/album?w=350&h=350&hash=8B7BCDC2" />
+    <SearchCard color="yellow" header="Party" img="https://api.lorem.space/image/album?w=350&h=350&hash=8B7BCDC2" />
+    <SearchCard color="purple" header="Hiphop" img="https://api.lorem.space/image/album?w=350&h=350&hash=8B7BCDC2" />
+    <SearchCard color="blue" header="Træning" img="https://api.lorem.space/image/album?w=350&h=350&hash=8B7BCDC2" />
+    <SearchCard color="red" header="Rock" img="https://api.lorem.space/image/album?w=350&h=350&hash=8B7BCDC2" />
+  </section>
+</MainLayout>
+
+<style></style>

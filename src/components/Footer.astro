@@ -1,0 +1,28 @@
+---
+import Button from "./Button.astro";
+---
+
+<footer>
+  <div class="footer-content">
+    <p class="uppercase">Eksempel på Spotify</p>
+    <p>Tilmeld dig for at få ubegrænsede sange og podcasts med lejlighedsvise reklamer. Du skal ikke bruge kreditkort.</p>
+  </div>
+  <Button variant="primary">Tilmeld dig gratis</Button>
+</footer>
+
+<style>
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background-image: linear-gradient(90deg, #af2896, #509bf5);
+    color: white;
+    font-weight: 200;
+  }
+
+  .uppercase {
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 0.9rem;
+  }
+</style>

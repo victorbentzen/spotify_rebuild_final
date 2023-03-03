@@ -1,0 +1,68 @@
+---
+import "../styles/style.css";
+import Button from "./Button.astro";
+import Card from "./Card.astro";
+---
+
+<main>
+  <div class="container">
+    <div class="header">
+      <h2>Fokus</h2>
+      <a href="#">Vis alle</a>
+    </div>
+    <div class="card-container">
+      <Card header="Peaceful Piano" description="Relax and indulge with beautiful piano pieces"><img slot="peaceful_piano" src="img/peaceful_piano.jpeg" alt="" /></Card>
+      <Card header="Deep Focus" description="Keep calm and focus with ambient and post-rock music."><img slot="peaceful_piano" src="img/deep_focus.jpeg" alt="" /></Card>
+      <Card header="Instrumental Study" description="Focus with soft study music in the background."><img slot="peaceful_piano" src="img/instrumental_study.jpeg" alt="" /></Card>
+      <Card header="Jazz Vibes" description="The original chill instrumental beats playlist."><img slot="peaceful_piano" src="img/jazz_vibes.jpeg" alt="" /></Card>
+      <Card header="Focus Flow" description="Uptempo instrumental hip hop beats."><img slot="peaceful_piano" src="img/focus_flow.jpeg" alt="" /></Card>
+    </div>
+    <div class="header">
+      <h2>Spotify Playlists</h2>
+      <a href="#">Vis alle</a>
+    </div>
+    <div class="card-container">
+      <Card header="Today's Top Hits" description="The Weeknd & Ariana Grande are on top of the Hottest 50!"><img slot="peaceful_piano" src="img/tth.jpeg" alt="" /></Card>
+      <Card header="RapCaviar" description="New music from Don Toliver, Quavo, Yeat and Lil Wayne. "><img slot="peaceful_piano" src="img/rap_caviar.jpeg" alt="" /></Card>
+      <Card header="All Out 2010s" description="The biggest songs of the 2010s."><img slot="peaceful_piano" src="img/all_out_2010s.jpeg" alt="" /></Card>
+      <Card header="Rock Classics" description="Rock legends & epic songs that continue to inspire generations. Cover: Foo Fighters"><img slot="peaceful_piano" src="img/rock_classics.jpeg" alt="" /></Card>
+      <Card header="Chill Hits" description="Kick back to the best new and recent chill hits."><img slot="peaceful_piano" src="img/chill_hits.jpeg" alt="" /></Card>
+    </div>
+  </div>
+</main>
+
+<style>
+  main {
+    background-color: #121212;
+  }
+
+  h2 {
+    color: white;
+  }
+  a {
+    color: grey;
+    font-weight: 500;
+  }
+
+  .header {
+    display: flex;
+    place-items: center;
+    justify-content: space-between;
+    padding: 1.3rem 1rem;
+  }
+  img {
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.65) 0px 5px 15px;
+  }
+
+  .card-container {
+    padding: 1rem 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+
+  .card-container:last-of-type {
+    padding-bottom: 5rem;
+  }
+</style>

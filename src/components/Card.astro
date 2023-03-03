@@ -1,0 +1,60 @@
+---
+const { header, description } = Astro.props;
+---
+
+<article>
+  <slot name="peaceful_piano" />
+  <h2>{header}</h2>
+  <p>{description}</p>
+  <img src="../img/playbutton.png" alt="Play Button" class="playbutton" />
+</article>
+
+<style>
+  h2 {
+    color: white;
+    font-size: 1rem;
+  }
+  p {
+    color: grey;
+    font-size: 0.8rem;
+  }
+
+  article {
+    max-width: 250px;
+    background-color: hsl(0, 0%, 14%);
+    border-radius: 5px;
+    padding: 1rem;
+    transition: 100ms all ease-in;
+    position: relative;
+    overflow: hidden;
+    max-height: 325px;
+  }
+
+  article:hover {
+    background-color: hsl(0, 0%, 25%);
+    transition: 100ms all ease-in;
+    transition-delay: 80ms;
+  }
+
+  article h2,
+  p {
+    margin-top: 1rem;
+  }
+  .card-text > * {
+    margin-top: 0.5rem;
+  }
+
+  article:hover .playbutton {
+    opacity: 1;
+    transition: 200ms all ease-in;
+    transform: translateY(-10%);
+  }
+
+  .playbutton {
+    opacity: 0;
+    width: 3rem;
+    position: absolute;
+    top: 45%;
+    left: 65%;
+  }
+</style>

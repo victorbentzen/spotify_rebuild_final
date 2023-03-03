@@ -1,0 +1,138 @@
+/* CSS RESET */
+
+/* 1. Use a more-intuitive box-sizing model. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: system-ui;
+}
+
+/* 2. Remove default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. Allow percentage-based heights in the application */
+html,
+body {
+  height: 100%;
+}
+
+/* Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+	6. Make all font sizes equal
+*/
+body {
+  -webkit-font-smoothing: antialiased;
+  font: inherit;
+}
+
+/* 6. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/* 7. Remove built-in form typography styles */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/* 8. Avoid text overflows and set max line lenght and height*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  /* max-width: 65ch; */
+  line-height: 1.6;
+}
+/* 9. Create a root stacking context */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* 10. Remove default link styling */
+a,
+ul {
+  list-style: none;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 11. Make footer stick to bottom */
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+/* VARIABLES */
+
+:root {
+  /* COLORS */
+  --primary-900: #000000;
+  --secondary-700: #111111;
+  --tertriary-500: #121212;
+  --card-500: #161616;
+  --text-900: #ffffff;
+  --text-500: #a7a7a7;
+  --btn-primary: #ffffff;
+  --btn-secondary: transparent;
+  --footer-background-image: linear-gradient(90deg, #af2896, #509bf5);
+
+  /* SPACING */
+  --card-padding: 1rem;
+
+  /* BORDER-RADIUS */
+  --btn-border-radius: 500px;
+  --card-border-radius: 0.5rem;
+}
+
+nav {
+  background-color: var(--primary-900);
+}
+
+.logo {
+  width: 130px;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.top-bar-main {
+  width: 100%;
+}
+
+main {
+  background: linear-gradient(#1f1f1f 0, #121212 100%) 0 0 / 100% 20rem no-repeat, #121212;
+}
+
+.card-container {
+  padding: 1rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.card-container:last-of-type {
+  padding-bottom: 5rem;
+}
+
+.header {
+  padding: 1.6rem 1rem 0.2rem 2.1rem;
+  color: white;
+}
